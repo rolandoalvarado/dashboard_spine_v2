@@ -21,6 +21,7 @@ class PagesController < ApplicationController
   end
 
   def create
+    logger.info("params[:page] : #{params[:page].inspect}")
     @page = Page.new(params[:page])
     @page.save
     respond_with @page

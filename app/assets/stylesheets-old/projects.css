@@ -1,0 +1,9 @@
+.stack > *:not(.active) {
+  display: none;
+}
+
+#head-wrap .dropdown.left .dropdown-menu li
+{
+  font-size: 11px;
+  color: black;
+}

@@ -1,0 +1,12 @@
+<h1>Listing Instances</h1>
+
+<% for instance in @instances: %>
+  <div class="item" data-id="<%= instance.id %>">
+    <a data-type="show"><%= instance.name %></a>
+    
+    <a data-type="edit">Edit</a> 
+    <a data-type="destroy">Destroy</a>
+  </div>
+<% end %>
+
+<p><a data-type="new">New Instance</a></p>

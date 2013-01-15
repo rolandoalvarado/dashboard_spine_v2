@@ -6,6 +6,7 @@ gem 'thin'
 
 group :development do
   gem 'sqlite3'
+  gem 'mysql2'
 end
 
 group :assets do
@@ -17,6 +18,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'execjs', :git => 'git://github.com/sstephenson/execjs.git'
+gem 'libv8', '~> 3.11.8.3', :platform => :ruby
+gem 'therubyracer', '=0.11.0beta8', :require => 'v8'
 
 group :production do
   gem 'pg'

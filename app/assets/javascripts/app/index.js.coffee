@@ -15,9 +15,9 @@ class App extends Spine.Controller
   constructor: ->
     super
     
-    @append(@pages = new App.Pages)
+    @append(@projects = new App.Projects)
+    App.Project.one 'refresh', ->
     
-    App.Page.one 'refresh', ->
-      Spine.Route.setup()  
-
+    Spine.Route.setup()  
+      
 window.App = App

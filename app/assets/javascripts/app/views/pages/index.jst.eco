@@ -1,9 +1,9 @@
-<h1>Listing Pages</h1>
+<h1>Listing Projects</h1>
 
 <table>
   <tr>
     <th>Name</th>
-    <th>Body</th>
+    <th>Description</th>
     <th></th>
     <th></th>
     <th></th>
@@ -23,4 +23,5 @@
 
 <br />
 
-<a data-type="new">New Page</a>
+<a data-type="new">New Project</a>
+<!-- TEsting -->

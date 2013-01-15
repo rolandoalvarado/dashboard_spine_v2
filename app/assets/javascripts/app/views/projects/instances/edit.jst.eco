@@ -1,0 +1,63 @@
+<h1>Edit Instance</h1>
+
+<a data-type="back">Back</a>
+
+<form>
+  
+  <label>
+    <span>Name</span>
+    <input 
+      type="text" name="name" 
+      value="<%= @name %>" required
+ autofocus>
+    <br />
+  </label>
+  
+  <label>
+    <span>Size</span>
+    <input 
+      type="text" name="size" 
+      value="<%= @size %>" required
+>
+    <br />
+  </label>
+  
+  <label>
+    <span>Qty</span>
+    <input 
+      type="text" name="qty" 
+      value="<%= @qty %>" required
+>
+    <br />
+  </label>
+  
+  <label>
+    <span>Keypair</span>
+    <input 
+      type="text" name="keypair" 
+      value="<%= @keypair %>" required
+>
+    <br />
+  </label>
+  
+  <label>
+    <span>Security Group</span>
+    <input 
+      type="text" name="security_group" 
+      value="<%= @security_group %>" required
+>
+    <br />
+  </label>
+  
+  <label>
+    <span>Password</span>
+    <input 
+      type="text" name="password" 
+      value="<%= @password %>" required
+>
+    <br />
+  </label>
+  
+  <button>Edit</button>
+
+</form>

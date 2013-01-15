@@ -11,11 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111116005853) do
+ActiveRecord::Schema.define(:version => 20130114033120) do
+
+  create_table "instances", :force => true do |t|
+    t.string   "name"
+    t.string   "size"
+    t.integer  "qty"
+    t.string   "keypair"
+    t.string   "security_group"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pages", :force => true do |t|
     t.string   "name"
-    t.string   "slug"
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -24,6 +34,13 @@ ActiveRecord::Schema.define(:version => 20111116005853) do
   create_table "posts", :force => true do |t|
     t.string   "name"
     t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "projects", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,321 @@
+<header class="clearfix" id="head-wrap">
+  <!-- Dropdown Left Wrapper -->
+  <div class="dropdown left">
+    <a class="dropdown-toggle" id="proj-name" role="button" data-toggle="dropdown" data-target="#" href="">
+      <i class="icon-cd main"></i> <%= @name %> </i>
+    </a>
+  </div>
+<!-- /Dropdown Left Wrapper -->
+<!-- Right Project Buttons -->
+  <div class="right proj-actions">
+    <!-- Button Group Left -->
+    <div class="btn-group left">
+	    <a class="btn" rel="tooltip" title="Volumes"><i class="icon-drive"></i></a> 
+	    <a class="btn" rel="tooltip" title="Floating IP"><i class="icon-network"></i></a> 
+	    <a class="btn" rel="tooltip" title="Security Group"><i class="icon-lock"></i></a>
+	    <a class="btn" rel="tooltip" title="Collaborators"><i class="icon-users"></i></a>
+    </div>
+    <!-- /Button Group Left -->
+    <!-- Button Dropdown Left -->
+    <div class="dropdown left">
+	    <a class="dropdown-toggle btn" id="actions" role="button" data-toggle="dropdown" data-target="#" href=""><i class="icon-cog"></i></a>
+	    <!-- Dropdown Menu Wrapper -->
+	    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" data-id="<%= @id %>">
+	      <li><a data-type="edit">Edit</a></li>
+	      <li><a data-type="destroy">Delete</a></li>
+	      <li class="divider"></li>
+	      <li><a data-type="quota">Quotas</a></li>
+	    </ul> <!-- /Dropdown Menu Wrapper -->
+	  </div> <!-- /Button Dropdown Left -->
+  </div> <!-- /Right Project Buttons -->  
+</header> <!-- /Header Wrapper -->  
+<!-- Main Wrapper -->
+<div id="main-wrap">
+  <!-- Instances -->
+  <aside id="instances">
+    <header class="clearfix">
+      <h4 class="left">Instances</h4>
+      <a data-type="new_instance" data-toggle="modal" class="right"><i class="icon-plus"></i></a>
+    </header>
+    <!-- Instance Item -->
+    <div class="instance-item clearfix active">
+      <div class="vm-img">
+        <img src="assets/loader-instance.gif" alt="loader-instance" width="55" height="31" class="instance-loader">
+      </div>
+      <dl>
+        <dt>Instance1-1</dt>
+        <dd>
+          <div class="attachments">
+            <i class="icon-drive"></i>
+            <i class="icon-network"></i>
+            <i class="icon-lock"></i>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <!-- /Instance Item -->
+    <!-- Instance Item -->
+    <div class="instance-item clearfix">
+      <div class="vm-img red"><i class="icon-cross"></i></div>
+      <dl>
+        <dt>InstanceName&hellip;</dt>
+        <dd>
+          <div class="attachments">
+            <i class="icon-drive"></i>
+            <i class="icon-network"></i>
+            <i class="icon-lock"></i>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <!-- /Instance Item -->
+    <div class="instance-item clearfix">
+      <div class="vm-img"><i class="icon-cube"></i></div>
+      <dl>
+        <dt>InstanceName&hellip;</dt>
+        <dd>
+          <div class="attachments">
+            <i class="icon-drive"></i>
+            <i class="icon-network"></i>
+            <i class="icon-lock"></i>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <!-- /Instance Item -->
+    <!-- Instance Item -->
+    <div class="instance-item clearfix">
+      <div class="vm-img red"><i class="icon-cross"></i></div>
+      <dl>
+        <dt>InstanceName&hellip;</dt>
+        <dd>
+          <div class="attachments">
+            <i class="icon-drive"></i>
+            <i class="icon-network"></i>
+            <i class="icon-lock"></i>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <!-- /Instance Item -->        
+    <!-- Instance Item -->
+    <div class="instance-item clearfix">
+      <div class="vm-img"><i class="icon-cube"></i></div>
+      <dl>
+        <dt>InstanceName&hellip;</dt>
+        <dd>
+          <div class="attachments">
+            <i class="icon-drive"></i>
+            <i class="icon-network"></i>
+            <i class="icon-lock"></i>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <!-- /Instance Item -->
+    <div class="instance-item clearfix">
+      <div class="vm-img"><i class=" icon-warning"></i></div>
+      <dl>
+        <dt>Instance5</dt>
+        <dd><small>No Attachments</small></dd>
+      </dl>
+    </div>
+  </aside>
+  <!-- /Instances -->
+  
+  <!-- Right Content [Details] -->
+  <div id="details">
+    <!-- Tab Wrapper -->
+    <header id="tab-wrap">
+      <!-- Tab Navigation Wrapper -->
+	    <ul class="nav nav-tabs" id="main-tab">
+	      <li class="active">
+	        <a href="#instance-details">Details <i class="icon-list"></i></a>
+	      </li>
+	      <li>
+	        <a href="#monitoring">Monitoring <i class="icon-statistics"></i></a>
+	      </li>
+	      <li>
+	        <a href="#snapshots">Snapshots <i class="icon-camera"></i></a>
+	      </li>
+	    </ul>
+	    <!-- /Tab Navigation Wrapper -->
+	    <!-- Instance Dropdown Menu Wrapper -->
+	    <div class="dropdown">
+	      <a href="" class="btn right instance-action dropdown-toggle" data-toggle="dropdown" data-target="#" href="">Actions</a>
+	      <!-- Dropdown Menu UL -->
+	      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+	        <li><a href="">Soft Reboot</a></li>
+	        <li><a href="">Hard Reboot</a></li>
+	        <li><a href="">Pause</a></li>
+	        <li><a href="">Suspend</a></li>
+	        <li><a href="">Reset State</a></li>
+	        <li><a href="">Logs</a></li>
+	        <li><a href="">VNC Console</a></li>
+	        <li class="divider"></li>
+	        <li><a href="">Take Snapshot</a></li>
+	        <li><a href="">Attach Volume</a></li>
+	        <li><a href="">Associate Floating IP</a></li>
+	        <li class="divider"></li>
+	        <li><a href="">Delete</a></li>
+	      </ul>
+	      <!-- /Dropdown Menu UL -->
+	    </div>
+	    <!-- /Instance Dropdown Menu Wrapper -->
+    </header>
+    <!-- /Tab Wrapper -->
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <!-- Tab Panel [Instance] -->
+      <div class="tab-pane active" id="instance-details">
+        <header class="clearfix">
+	        <dl class="left">
+		        <dt>Instance1-1</dt>
+		        <dd><span class="label">Public</span> 1.322.32.43</dd>
+		        <dd><span class="label">Private</span> 1.223.322.4</dd>
+	        </dl>
+	      </header>
+	      <!-- Graph Wrapper -->
+        <div class="clearfix" id="graphs-wrap">
+	        <div class="graph-item">
+	          <img src="assets/graph.png" alt="graph" width="328" height="328">
+		        <h4>CPU</h4>
+	        </div>
+	        <div class="graph-item">
+	          <img src="assets/graph.png" alt="graph" width="328" height="328">
+	          <h4>RAM</h4>
+	        </div>
+	        <div class="graph-item">
+	          <img src="assets/graph.png" alt="graph" width="328" height="328">
+	          <h4>I/O</h4>
+	        </div>
+        </div>
+        <!-- /Graph Wrapper -->
+        <!-- Details Wrapper -->      
+        <div id="details-wrap">
+          <dl>
+            <dt>Image Name</dt>
+            <dd>dwc-1099</dd>
+          </dl>
+          <dl>
+            <dt>RAM</dt>
+            <dd>2048</dd>
+          </dl>
+          <dl>
+            <dt>vCPUs</dt>
+            <dd>1</dd>
+          </dl>
+          <dl>
+            <dt>Disk</dt>
+            <dd>10</dd>
+          </dl>
+          <dl>
+            <dt>Sec Groups</dt>
+            <dd>default</dd>
+          </dl>
+          <dl>
+            <dt>Private IP</dt>
+            <dd>10.2.0.14</dd>
+          </dl>
+          <dl>
+            <dt>Public (internal)</dt>
+            <dd>-</dd>
+          </dl>
+          <dl>
+            <dt>Public (external)</dt>
+            <dd>-</dd>
+          </dl>
+          <dl>
+            <dt>Keypair Name</dt>
+            <dd>-</dd>
+          </dl>
+          <dl>
+            <dt>Volumes</dt>
+            <dd>no volumes attached</dd>
+          </dl>
+        </div>
+        <!-- /Details Wrapper -->      
+        <div id="attachment-map">
+	        <img src="assets/map.png" alt="map">
+        </div>
+      </div>
+      <!-- /Tab Panel [Instance] -->
+      <!-- Tab Panel [Monitoring]-->
+      <div class="tab-pane" id="monitoring">
+        <div class="sub-pane">
+          <header class="clearfix monitor-header">
+		        <h3 class="left">Activity</h3> 
+		        <p class="right">24 hours <i class="icon-arrow-down"></i></p> 
+		        <p class="right">Relative <i class="icon-arrow-down"></i></p> 
+		      </header>
+	        <div class="graph-container">
+		        <h4>CPU</h4>
+		        <img src="assets/large-graph.png" alt="large-graph">
+	        </div>
+	        <div class="graph-container">
+		        <h4>Network</h4>
+		        <img src="assets/large-graph.png" alt="large-graph">
+	        </div>
+	        <div class="graph-container">
+		        <h4>I/O</h4>
+		        <img src="assets/large-graph.png" alt="large-graph">
+	        </div>
+        </div>
+      </div>
+      <!-- /Tab Panel [Monitoring]-->
+      <!-- Tab Panel [Snapshot]-->
+      <div class="tab-pane" id="snapshots">
+        <div class="sub-pane">
+          <header class="clearfix">
+		        <h3>Snapshots</h3>
+	        </header>
+	        <!-- Table -->
+	        <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Public</th>
+                <th>Container Format</th>
+                <th class="align-right">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ubuntu 12.01.1 Ruby</td>
+                <td>Snapshot</td>
+                <td>ACTIVE</td>
+                <td>Yes</td>
+                <td>OVF</td>
+                <td class="align-right">launch</td>
+              </tr>
+              <tr>
+                <td>Ubuntu 12.01.1 Ruby</td>
+                <td>Snapshot</td>
+                <td>ACTIVE</td>
+                <td>Yes</td>
+                <td>OVF</td>
+                <td class="align-right">launch</td>
+              </tr>
+              <tr>
+                <td>Ubuntu 12.01.1 Ruby</td>
+                <td>Snapshot</td>
+                <td>ACTIVE</td>
+                <td>Yes</td>
+                <td>OVF</td>
+                <td class="align-right">launch</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- /Table -->
+        </div>
+      </div>
+      <!-- /Tab Panel [Snapshot]-->
+    </div>
+    <!-- /Tab Content -->
+  </div>
+  <!-- /Right Content [Details] -->
+</div>
+<!-- /Main Wrapper -->
+

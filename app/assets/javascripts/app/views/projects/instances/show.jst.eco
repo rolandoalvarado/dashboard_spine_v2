@@ -1,0 +1,10 @@
+<h1>Show Instance</h1>
+
+<a data-type="edit">Edit</a> <a data-type="back">Back</a>
+
+<p>Name: <%= @name %></p>
+<p>Size: <%= @size %></p>
+<p>Qty: <%= @qty %></p>
+<p>Keypair: <%= @keypair %></p>
+<p>Security Group: <%= @security_group %></p>
+<p>Password: <%= @password %></p>

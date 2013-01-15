@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  size: MyString
+  qty: 1
+  keypair: MyString
+  security_group: MyString
+  password: MyString
+
+two:
+  name: MyString
+  size: MyString
+  qty: 1
+  keypair: MyString
+  security_group: MyString
+  password: MyString

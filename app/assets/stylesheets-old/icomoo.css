@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../font/icomoon.eot');
+	src:url('../font/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../font/icomoon.svg#icomoon') format('svg'),
+		url('../font/icomoon.woff') format('woff'),
+		url('../font/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-plus:before {
+	content: "\61";
+}
+.icon-arrow-down:before {
+	content: "\62";
+}
+.icon-cd:before {
+	content: "\64";
+}
+.icon-list:before {
+	content: "\66";
+}
+.icon-statistics:before {
+	content: "\22";
+}
+.icon-warning:before {
+	content: "\23";
+}
+.icon-new:before {
+	content: "\24";
+}
+.icon-cube:before {
+	content: "\25";
+}
+.icon-lock:before {
+	content: "\26";
+}
+.icon-network:before {
+	content: "\21";
+}
+.icon-drive:before {
+	content: "\27";
+}
+.icon-cross:before {
+	content: "\28";
+}
+.icon-cog:before {
+	content: "\29";
+}
+.icon-cross-2:before {
+	content: "\2b";
+}
+.icon-users:before {
+	content: "\2a";
+}
+.icon-user:before {
+	content: "\e000";
+}
+.icon-camera:before {
+	content: "\e001";
+}
+.icon-hourglass:before {
+	content: "\e002";
+}
+.icon-broadcast:before {
+	content: "\e004";
+}

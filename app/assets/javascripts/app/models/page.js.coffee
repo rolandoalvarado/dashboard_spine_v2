@@ -4,3 +4,4 @@ class App.Page extends Spine.Model
   
   validate: ->
     'name required' unless @name
+    'description required' unless @description

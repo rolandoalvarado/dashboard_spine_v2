@@ -1,4 +1,4 @@
-<h1>Edit Page</h1>
+<h1>Edit Project</h1>
 
 <form>
   
@@ -10,7 +10,7 @@
   </label>
   
   <label>
-    <span>Body</span>
+    <span>Description</span>
     <input 
       type="text" name="body" 
       value="<%= @body %>">
